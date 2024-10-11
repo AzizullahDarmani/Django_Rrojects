@@ -1,0 +1,72 @@
+input[type="radio"] {
+    transform: scale(1.4); /* Increase the scale to make them bigger */
+    margin-right: 5px;    /* Add some space between the radio and the label */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.registration-box {
+    background-color: #fff;
+    padding: 55px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.registration-box h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: orange; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+
+
+
+h1{
+    text-align : center; 
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+}

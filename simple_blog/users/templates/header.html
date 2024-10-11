@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="{% static 'header.css' %}">
+</head>
+<body>
+
+  
+    <header class="header">
+     
+        <div class="logo">
+            <!-- <h1>STORYLINE</h1>  -->
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="nav-links">
+            <ul>
+                <!-- Only show Comment link if not on post creation page -->
+                {% if not request.path == '/blog/post/new/' %}
+                    <li><a href="{% url 'post_create' %}">Comment</a></li>
+                {% endif %}
+                <li><a href="{% url 'post_list' %}">Posts</a></li>
+                <li>
+                    <form method="POST" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button class="btn" type="submit" style="background-color: #f19408; border:none; color:white; font-size:15px; cursor:pointer;">LogOut</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="blog-logo">
+            <h1>WELCOME TO STORYLINE</h1>
+        </div>
+    </main>
+
+</body>
+</html>
